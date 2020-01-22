@@ -51,6 +51,25 @@ c++几乎是c语言的超集
 
 * ANSI/ISO C
 * C99
+
+C99标准引入的主要新特性：
+
+1、对编译器限制增加了，比如源程序每行要求至少支持到 4095 字节，变量名与函数名的要求支持到 63 字节 (extern 要求支持到 31)。
+
+2、增加了新关键字 restrict，inline，_Complex，_Imaginary，_Bool。
+
+3、支持 long long，long double _Complex，float _Complex 这样的类型。
+
+4、持了不定长的数组。数组的长度就可以用变量了。声明类型的时候呢,就用 int a[*] 这样的写法。不过考虑到效率和实现，这玩意并不是一个新类型。所以就不能用在全局里，或者 struct union 里面，如果你用了这样的东西，goto 语句就受限制了。
+
+5、相较于C89标准，C99标准新增了一种结构体/数组的初始化方式，名叫designated initializers。
+
+6、支持 16 进制的浮点数的描述。
+
+7、增加了一个内置的局部静态字符数组变量 __func__ ，可以用于得到当前函数的函数名。
+
+8、取消了不写函数返回类型默认就是 int 的规定。
+
 * C11
 
 ## 7.写程序流程
@@ -77,6 +96,22 @@ c++几乎是c语言的超集
 
 ## 2.示例解释
 
+c语言元素：
+
+* 关键字
+* 标识符
+* 运算符
+* 数据
+
+c语言的六种语句：
+
+* 标号语句
+* 复合语句
+* 表达式语句
+* 选择语句
+* 迭代语句
+* 跳转语句
+
 ## 3.简单程序的结构
 
 ## 4.提高程序可读性
@@ -87,9 +122,25 @@ c++几乎是c语言的超集
 
 ## 7.调试程序
 
+语法错误
+
+语义错误
+
 ## 8.关键字和保留标识符
 
+原有关键字和保留字：auto	extern	short	while	break	float	case	for	sizeof	char	goto	static	if	struct	continue	switch	default	int	typedef	do	long	union	double	register	unsigned	else	restrict	return
+
+c90新增：signed	enum	const	volatile	void
+
+c99新增：inline
+
+c11新增：_Alignas	_Alignof	_Atomic	_Bool	_Complex	_Generic	_Imaginary	_Noreturn	_Static_assert	_Thread_local
+
 # 三、数据和C
+
+整数类型
+
+浮点类型
 
 ## 1.示例程序
 
@@ -97,7 +148,39 @@ c++几乎是c语言的超集
 
 ## 3.数据：数据类型关键字
 
+位、字节、字
+
 ## 4.C基本数据类型
+
+基本类型：int	long 	short	unsigned	char	float	double
+
+基本类型变式关键字：long	short	unsigned	signed
+
+基本类型变式：
+
+int 
+
+unsigned int =unsigned
+
+short int=short=signed short=signed short int
+
+unsigned short int=unsigned short
+
+long int
+
+unsigned long int=unsigned long 
+
+long long int=long long 
+
+unsigned long long int=unsigned long long=ULL
+
+
+
+_Bool布尔
+
+_Complex复数
+
+_Imaginary虚数
 
 ## 5.使用数据类型
 
@@ -365,24 +448,147 @@ c++几乎是c语言的超集
 
 # 十八、索引
 
-include
+#include
 
-stdio.h
+<stdio.h>
 
-main
+main()
 
 void
 
 int
 
-printf
+printf()
 
 \n
 
 %d
 
-scanf
+scanf()
 
+getchat()
 
+return
 
-turn
+//
+
+/*    */
+
+auto	
+
+extern	
+
+short	
+
+while	
+
+break	
+
+float	
+
+case	
+
+for	
+
+sizeof	
+
+char	
+
+goto	
+
+static	
+
+if	
+
+struct	
+
+continue	
+
+switch	
+
+default	
+
+nt	
+
+typedef	
+
+do	
+
+long	
+
+union	
+
+double	
+
+register	
+
+unsigned	
+
+else	
+
+restrict	
+
+void	
+
+return
+
+signed	
+
+enum	
+
+const	
+
+volatile	
+
+inline
+
+_Alignas	
+
+_Alignof	
+
+_Atomic	
+
+_Bool	
+
+_Complex	
+
+_Generic	
+
+_Imaginary	
+
+_Noreturn	
+
+_Static_assert	
+
+_Thread_local
+
+%o
+
+%x
+
+%X
+
+%d
+
+%#o
+
+%#x
+
+%#X
+
+%ld
+
+%u
+
+%lx
+
+%lo
+
+%ho
+
+%llu
+
+%lld
+
+%hd
+
