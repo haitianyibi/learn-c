@@ -188,6 +188,32 @@ _Imaginary虚数
 
 ## 7.转义序列示例
 
+\a
+
+\b
+
+\f
+
+\n
+
+\r
+
+\t
+
+\v
+
+\\\
+
+\\'
+
+\\"
+
+\?
+
+\0**
+
+\x**
+
 # 四、字符串和格式化输入、输出
 
 ## 1.示例程序
@@ -591,4 +617,20 @@ _Thread_local
 %lld
 
 %hd
+
+%c
+
+stdint.h
+
+inttypes.h
+
+int32_t
+
+int_least8_t
+
+int_fast8_t
+
+intmax_t
+
+unitmax_t
 
