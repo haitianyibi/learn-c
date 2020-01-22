@@ -362,3 +362,27 @@ c++几乎是c语言的超集
 ## 6.链表和数组
 
 ## 7.二叉查找树
+
+# 十八、索引
+
+include
+
+stdio.h
+
+main
+
+void
+
+int
+
+printf
+
+\n
+
+%d
+
+scanf
+
+
+
+turn
