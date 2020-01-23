@@ -182,6 +182,14 @@ _Complex复数
 
 _Imaginary虚数
 
+指数计数法
+
+科学计数法
+
+p计数法
+
+其他类型：数组、指针、结构、联合
+
 ## 5.使用数据类型
 
 ## 6.参数和陷阱
@@ -634,3 +642,28 @@ intmax_t
 
 unitmax_t
 
+%f
+
+%lf
+
+%le
+
+%la
+
+NaN=not a number
+
+inf=infinity
+
+float _Complex
+
+double _Complex
+
+long double_Complex
+
+float _Imaginary
+
+double _Imaginary
+
+long double _Imaginary
+
+complex.h
