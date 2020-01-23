@@ -94,6 +94,58 @@ C99标准引入的主要新特性：
 
 ## 1.C示例
 
+```
+    #     include      <stdio.h>   
+
+int      main     (     )     {
+	return     0      ;    
+   }          
+```
+
+```
+#include<stdio.h>  
+int main(){return 0;}
+```
+
+```
+#include<stdio.h>  
+int 
+main(){return 0;}
+```
+
+```
+#include<stdio.h>int
+main(){return 0;}
+```
+
+#号前面可以有或无空白字符
+
+#号和include之间可以有或无空白字符
+
+include等关键字中间不能有空白字符
+
+include 和<stdio.h>之间可以有或无空白字符
+
+<和stdio.h之间不可以有空白字符
+
+stdio.h和>之间可以有空白字符
+
+main和（之间可以有或无空白字符
+
+return和0之间至少一个空白字符
+
+int和main之间至少一个空白字符
+
+main不能和#include<stdio.h>一行
+
+stdio.h必须和include一行
+
+int和stdio.h一行不会被解析为int
+
+* c语言解析整体指只能连在一起被编译器解析的字符整体，如：#	include	<stdio.h	>	int	main	(	)	{	return	0	;	}等共13个整体。
+
+* 整体内不可以有空白字符，整体之间可以有多个空白字符或无空白字符，有些整体之间需要至少一个空白字符
+
 ## 2.示例解释
 
 c语言元素：
@@ -222,15 +274,23 @@ p计数法
 
 \x**
 
+%%
+
 # 四、字符串和格式化输入、输出
 
 ## 1.示例程序
 
 ## 2.字符串
 
+末尾以\0借结束
+
 ## 3.常量和C预处理器
 
+#define  max	value
+
 ## 4.printf()和scanf()
+
+
 
 # 五、运算符、表达式和语句
 
@@ -482,99 +542,25 @@ p计数法
 
 # 十八、索引
 
-#include
+### 头文件：
 
-<stdio.h>
+stdio.h	stdint.h	inttypes.h	float.h	limits.h	complex.h	string.h
 
-main()
+### 预处理指令：
 
-void
+#include	#define
 
-int
+### 方法：
 
-printf()
+main()	printf()	getchat()	scanf()	sizeof()	fflush()	strlen()	fgets()	sqrt()	pow()
 
-\n
 
-%d
 
-scanf()
 
-getchat()
 
-return
+### 类型：
 
-//
-
-/*    */
-
-auto	
-
-extern	
-
-short	
-
-while	
-
-break	
-
-float	
-
-case	
-
-for	
-
-sizeof	
-
-char	
-
-goto	
-
-static	
-
-if	
-
-struct	
-
-continue	
-
-switch	
-
-default	
-
-nt	
-
-typedef	
-
-do	
-
-long	
-
-union	
-
-double	
-
-register	
-
-unsigned	
-
-else	
-
-restrict	
-
-void	
-
-return
-
-signed	
-
-enum	
-
-const	
-
-volatile	
-
-inline
+int	void	short	float	char	struct	long	double	enum	unsigned	signed	
 
 _Alignas	
 
@@ -596,41 +582,15 @@ _Static_assert
 
 _Thread_local
 
-%o
+unsigned int
 
-%x
+unsigned long
 
-%X
+unsigned short
 
-%d
+const	
 
-%#o
 
-%#x
-
-%#X
-
-%ld
-
-%u
-
-%lx
-
-%lo
-
-%ho
-
-%llu
-
-%lld
-
-%hd
-
-%c
-
-stdint.h
-
-inttypes.h
 
 int32_t
 
@@ -641,14 +601,6 @@ int_fast8_t
 intmax_t
 
 unitmax_t
-
-%f
-
-%lf
-
-%le
-
-%la
 
 NaN=not a number
 
@@ -666,4 +618,120 @@ double _Imaginary
 
 long double _Imaginary
 
-complex.h
+
+
+
+
+### 转义字符：
+
+\n	%%
+
+### 格式化输入输出：
+
+#### 输入：
+
+%a	%A	%c	%d	%e	%E	%f	%g	%G	%i	%o	%p	%s	%u	%x	%X	
+
+%#o
+
+%#x
+
+%#X
+
+%ld
+
+%lu
+
+%lx
+
+%lo
+
+%ho
+
+%llu
+
+%lld
+
+%hd
+
+%lf
+
+%le
+
+%la
+
+%zd
+
+#### 输出：
+
+加	减	空格	#	零	数字	h	hh	j	l	ll	L	t	z
+
+%-10d	%4d	%.f	%.0f	%5.2f	
+
+%hu	%hx	%6.4hhd	%hhu	%hhx	%6.4hd
+
+%jd	%8jx
+
+%ld	%8lu
+
+%lld	%8llu
+
+%Lf	%10.4Le
+
+%td	%12ti
+
+%zd	%12zd
+
+%-20s
+
+%+6.2f
+
+% 6.2f
+
+%#o
+
+%#8.0f
+
+%+#10.3e
+
+%010d
+
+%0.83f
+
+%*d
+
+
+
+### 控制流：
+
+return	while	break	for	goto	if	case	continue	switch	do	else	
+
+
+
+### 注释：
+
+//
+
+/*    */
+
+auto	
+
+extern	
+
+static	
+
+default	
+
+nt	
+
+typedef	
+
+union	
+
+register	
+
+restrict	
+
+volatile	
+
+inline
