@@ -548,7 +548,7 @@ stdio.h	stdint.h	inttypes.h	float.h	limits.h	complex.h	string.h
 
 ### 预处理指令：
 
-#include	#define
+#include	#define	\#ifndef	\#endif
 
 ### 方法：
 
