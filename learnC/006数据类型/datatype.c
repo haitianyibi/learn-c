@@ -35,6 +35,7 @@ int main(){
 	int inttoint=int1;//变量赋值 128
 	int ctoint=chara;//类型转换，97
 	int chartoint='a'; //类型转换，97
+	int Binary=0b100;//二进制  4 
 	int intOCT=010; //八进制 8 
 	int intHEX=0xa0; //十六进制 a*16=160 
 	int a,b,c;//声明变量（定义）,开辟相应大小空间但未初始化，其值可能是任一数值。 
